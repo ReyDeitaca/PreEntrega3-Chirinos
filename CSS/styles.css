@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%; /*hace que 1 rem valga 10 pixeles*/
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family:'Andika', sans-serif;;
+    background-image: url(../img/fondo.jfif);
+}
+
+
+
+/*HEADER*/
+
+header{
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    background-color:  rgba(249, 158, 1, 0.904);
+}
+
+#header {
+    grid-area: header;
+}
+#cabecera {
+    grid-area: cabecera;
+}
+.logo{
+    height: 5rem;
+    width: 5rem;
+    display: block;
+}
+
+.menu__nav{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.menu__nav li{
+    display: inline;
+    color: black;
+}
+
+.menu__nav li a{
+    color: black;
+    transition: all 0.5s;
+}
+.menu__nav li a:hover {
+    background-color: #8D8379;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 20%;
+    cursor: pointer;
+    
+}
+
+/*Media header*/
+
+@media screen and (min-width: 1200px) {
+    .menu__nav {
+        font-size: 2.5rem;
+        gap: 2rem;
+    }
+
+    .logo {
+        height: 10rem;
+        width: 14rem;
+    }
+}
+/*--Sections--*/
+
+/*Servicios*/
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 2rem;
+    
+}
+
+h3{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h5{
+    font-size: 1rem;
+}
+p{
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+}
+/* Index */
+
+#bodyi {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "quienes-somos"
+    "Servicios"
+    "coming-soon"
+    "footer";
+    grid-template-columns: 1fr;
+}
+
+#quienes-somos {
+    grid-area: quienes-somos;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.video{
+    background-color: rgba(249, 158, 1, 0.904);    
+    padding: 3rem;
+    width: 25rem;
+}
+
+.separacion{
+    padding: 2rem;
+    width: 25rem;
+    background-color: #00738dee;
+}
+
+@media screen and (min-width: 1200px){
+    .separacion{
+        width: 45rem;
+    }
+    .video{
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/*SERVICIOS*/
+
+#Servicios {
+    grid-area: Servicios;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+@media screen and (min-width: 1200px) {
+    #Servicios {
+        flex-direction: row;
+    }
+}
+
+.card{
+    background-color: rgba(249, 158, 1, 0.904);    
+    padding: 3rem;
+    width: 17rem;
+    height: 23rem;
+    border: solid 1rem #00748d;
+    transition: all 1s;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.2);
+}
+
+.card__titulo {
+    font-size: 1.7rem;
+}
+.card__imagen{
+    width: 17rem;
+    height: 20rem;
+}
+
+.card__descripcion{
+    text-align: justify;
+}
+
+/*comingsoon*/
+
+#coming-soon{
+    grid-area: coming-soon;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.homedesign{
+    padding: 2rem;
+    width: 25rem;
+    background-color: #00738def;
+    text-align: justify;
+}
+@media screen and (min-width: 1200px) {
+    .homedesign {
+        width: 45rem;
+    }
+}
+
+/*demolicion*/
+
+#bodyd {
+    font-family:'Andika', sans-serif;;
+    background-image: url(../img/fondo.jfif);
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "d1"
+    "d2"
+    "d3"
+    "footer";
+}
+
+#d1{
+    margin-top: 2rem;
+    grid-area: d1;
+    padding: 4rem;
+    height: 15rem;
+    background-color: #00748dee;
+    display: flex;
+}
+
+#d1 div {
+    text-align: center;
+}
+
+#d2 {
+    grid-area: d2;
+    background-color: rgba(249, 158, 1, 0.904);
+}
+
+#d2 h2 {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.fotos {
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        column-gap: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        transition: 2s;
+}
+
+.fotos img{
+    height: 25rem;
+    width: 25rem;
+}
+
+.fotos:hover{
+    transform: scale(1.1);
+}
+
+#d3 {
+    grid-area: d3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    background-color: #00748dee;
+}
+
+.escombros{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    width: 32rem;
+}
+
+.videod {
+    display: grid;
+    background-color: #00738dee;;    
+    padding: 3rem;
+    width: 25rem;
+}
+
+/*GALERIA*/
+
+#bodyg {
+    font-family:'Andika', sans-serif;;
+    background-image: url(../img/fondo.jfif);
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "titulo"
+    "galeria"
+    "footer";
+    grid-column: 1fr;
+}
+
+#titulo {
+    margin: 1rem;
+    grid-area: titulo;
+    text-align: center;
+    font-size: 0.5rem;
+    background-color: #00738dee;
+}
+
+#galeria {
+    grid-area: galeria;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    
+}
+@media screen and (min-width: 1200px) {
+    #galeria {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        
+    }
+}
+
+
+/*proteccion*/
+
+/*contacto*/
+
+#bodyc{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "formulario"
+    "footer";
+    grid-column: 1fr;
+}
+
+#formulario {
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 10rem;
+}
+
+#formulario h1 {
+    background-color: #8D8379;
+    color: white;
+    border-radius: 20%;
+}
+.datos {
+    font-size: 2.5rem;
+    background-color: #00748d;
+    margin-top: 2rem;
+}
+
+.botonenviar {
+    display: flex;
+    transition: all 2s;
+    height: 2rem;
+    width: 6rem;
+
+}
+
+.botonenviar:hover {
+    cursor: pointer;
+    transform: scale(1,2);
+
+}
+/*footer*/
+    
+footer{
+    background-color:rgba(249, 158, 1, 0.911) ;
+    display: flex;
+    grid-area: footer;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    bottom: 0;
+}
+@media screen and (min-width: 1200px) {
+    footer {
+        display: grid;
+        justify-items: center;
+    }
+    footer h5 {
+        font-size: 1.5rem;
+    }
+    footer p {
+        font-size: 1.2rem;
+    }
+}
