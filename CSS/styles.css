@@ -133,7 +133,7 @@ footer {
   justify-content: center;
 }
 
-.video {
+.video, .videod {
   background-color: rgba(249, 158, 1, 0.904);
   padding: 3rem;
 }
@@ -148,7 +148,7 @@ footer {
   .separacion {
     width: 45rem;
   }
-  .video {
+  .video, .videod {
     display: flex;
     align-items: center;
   }
@@ -296,6 +296,7 @@ footer {
   align-items: center;
   background-color: rgba(0, 116, 141, 0.9333333333);
   margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -315,8 +316,6 @@ footer {
 
 .videod {
   display: grid;
-  background-color: rgba(0, 116, 141, 0.9333333333);
-  padding: 3rem;
 }
 
 /*proteccion*/
