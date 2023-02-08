@@ -1,0 +1,82 @@
+/*proteccion*/
+
+#bodyp {
+    font-family: $fuente-unica;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "p1"
+    "p2"
+    "p3"
+    "footer";
+}
+
+.p1{
+    margin-top: 2rem;
+    grid-area: p1;
+    padding: 2rem 4rem;
+    background-color: $color-aopaco;
+    display: flex;
+    flex-wrap: wrap;
+    div {
+    text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .p1 {
+        grid-area: p1;
+        background-color: $color-aopaco;
+        justify-content: center;
+    }
+}
+
+.p2 {
+    background-color: $color-aopaco;
+    padding: 2rem 4rem;
+    h2 {
+    margin-top: 2rem;
+    text-align: center;
+    justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .p2 {
+        grid-area: p2;
+        background-color: $color-aopaco;
+        align-items: center;
+    }
+}
+
+.p3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    background-color: $color-primario;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    
+    #carouselExampleCaptions{
+    width: 650px;
+    }
+
+    .carousel-item img{
+        height: 70vh;
+    }
+    .carousel-caption{
+        background-color: $color-fondo;
+        border-radius: 10%;
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .p3 {
+        grid-area: p3;
+        display: grid;
+        background-color: $color-primario;
+    }
+}
+
+

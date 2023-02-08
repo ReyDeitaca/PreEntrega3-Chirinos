@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%; /*hace que 1 rem valga 10 pixeles*/
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: $fuente-unica;
+    background-image: url(../img/fondo.jfif);
+    color: $color-fuente;
+}
+
+h1{
+    font-size: 2.1rem;
+}
+
+h2{
+    font-size: 2.1rem;
+    
+}
+
+h3{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h5{
+    font-size: 1.7rem;
+}
+p{
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+
+    }
+}
+
+/*HEADER*/
+
+header{
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    background-color:  rgba(249, 158, 1, 0.904);
+    font-size: 2.5rem;
+    justify-content: space-between;
+    
+}
+
+#header {
+    grid-area: header;
+}
+#cabecera {
+    grid-area: cabecera;
+}
+.logo{
+    height: 5rem;
+    width: 7rem;
+    display: block;
+}
+
+/*Media header*/
+
+@media screen and (min-width: 1200px) {
+    .menu__nav {
+        font-size: 2.5rem;
+        gap: 2rem;
+    }
+
+    .logo {
+        height: 10rem;
+        width: 14rem;
+    }
+
+    header{
+        justify-content: flex-start;
+    }
+}
+
+footer{
+    background-color:rgba(249, 158, 1, 0.911) ;
+    display: flex;
+    grid-area: footer;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    bottom: 0;
+}
+@media screen and (min-width: 1200px) {
+    footer {
+        display: grid;
+        justify-items: center;
+    }
+    footer h5 {
+        font-size: 1.7rem;
+    }
+    footer p {
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,20 @@
+/*Variables*/
+
+/*Colores y Fuente*/
+$color-primario: rgba(249, 158, 1, 0.904);
+$color-secundario: rgba(0, 115, 141, 0.9333333333);
+$color-aopaco: #00748dee;
+$color-fondo: #000000b7;
+
+$fuente-unica:'Andika', sans-serif;;
+$color-fuente: #000;
+
+/*MIXINS*/
+@mixin flex-colum-centrado {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+

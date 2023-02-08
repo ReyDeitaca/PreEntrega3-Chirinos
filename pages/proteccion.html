@@ -11,37 +11,47 @@
     <link rel="shortcut icon" href="../img/SCH RENOVATION INC Logo Png 01 (1).png" type="image/x-icon">
     <title>Protección</title>
 </head>
-<body id="body">
+<body id="bodyp">
     <header id="header">
         <div>
             <a href="../index.html"><img src="../img/SCH RENOVATION INC Logo Png 01 (1).png" alt="Logo SCHrenovation" title="Logo de SCH Renovation" class="logo">
             </a>
         </div>
-        <div class="navegador">
-            <nav>
-                <Ul class="menu__nav">
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="demolicion.html">Demolición</a>
-                    </li>
-                    <Li>
-                        <a href="proteccion.html">Protección</a>
-                    </Li>
-                    <li>
-                        <a href="galeria.html">Galeria</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </Ul>
+        <div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="demolicion.html">Demolición</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="proteccion.html">Protección</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">Galeria</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
-        
     </header>
 
-    <section>
+    <section class="p1">
         <div>
             <h1>
                 Trabajamos protegiendo tus espacios
@@ -50,43 +60,67 @@
         </div>
     </section>
 
-    <section>
+    <section class="p2">
+        <div class="container">
             <h2>
                 Utilizamos distintos tipos de protección
             </h2>
             <p>
-                Dependiendo de la superficie y el lugar donde se encuentra, utilizamos disitntos materiales para proteger las superficies.
+                Dependiendo de la superficie, el lugar donde se encuentra y los requerimientos de nuestros clientes,  utilizamos disitntos materiales para proteger las superficies. Cada uno cumple una funcion a la hora de proteger y normalmente se utilizan en conjunto para lograr el maximo cuidado.
             </p>
-    </section>
-
-    <section>
-        <div class="card">
-            <img class="card__imagen" src="img/taladropiso.jpeg" alt="Cartón duro"></a>
-            
-            <p class="card__descripcion"></p>
-        </div>
-
-        <div class="card">
-            <img class="card__imagen" src="../img/proteccion1.jpeg" alt="Plástico">
-
-            <p class="card__descripcion"></p>
-        </div>
-
-        <div class="card">
-            <img class="card__imagen" src="../img/proteccion1.jpeg" alt="papel">
-
-            <p class="card__descripcion"></p>
         </div>
     </section>
 
-    <section>
-        <div>
-            <a href="../pages/contacto.html"></a>
-            <input type="submit" value="Consultanos">
+    <section class="p3">
+        <div id="carouselExampleCaptions" class="carousel slide mx-auto">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/masonite.jpg" class="d-block w-100" alt="carton duro">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Masonite</h5>
+                    <p>Protege paredes y pisos. Carton duro muy resistente contra cualquier tipo de golpes.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/ramboard.jpg" class="d-block w-100" alt="ramboard">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ramboard</h5>
+                    <p>Protege paredes y pisos. Papel duro un poco menos resistente que el masonite.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/WindowShield.jpg" class="d-block w-100" alt="protector de ventanas">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Blue window shield</h5>
+                    <p>Proteges ventanas. Es un papel film azul especial que evita que se rayen o rompan las superficies de vidirio.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/plastico.jpg" class="d-block w-100" alt="plastico">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Plastico</h5>
+                    <p>Protege cualquier superficie. Evita rayaduras sobre superficies que no sean de vidrio.</p>
+                </div>
+            </div>
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
-    <footer>
+    <footer class="container-fluid">
         <div class="contacto">
             <h5>Contacto</h5>
             <p>Estimate@schrenovation.com</p>

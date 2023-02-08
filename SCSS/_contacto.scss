@@ -1,0 +1,66 @@
+/*contacto*/
+
+#bodyc{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "formulario"
+    "footer";
+    grid-column: 1fr;
+}
+
+#formulario {
+    grid-area: formulario;
+    @include flex-colum-centrado;
+    margin: 10rem;
+    flex-wrap: wrap;
+
+    h1 {
+        background-color: #8D8379;
+        color: white;
+        border-radius: 20%;
+        padding: 2rem;
+    }
+
+    legend{
+        font-size: 2.1rem;
+    }
+
+    .datos {
+    font-size: 2rem;
+    background-color: #00748d;
+    margin-top: 2rem;
+    padding: 3rem;
+    border-radius: 10%;
+    }
+    
+    .botonenviar {
+    display: flex;
+    transition: all 2s;
+    height: 4rem;
+    width: 6rem;
+    font-size: 1.6rem;
+    border-radius: 10%;
+    justify-content: center;
+    }
+}
+@media screen and (min-width: 1200px){
+    #formulario {
+        grid-area: formulario;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin: 10rem;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+.botonenviar:hover {
+    cursor: pointer;
+    transform: scale(1,2);
+
+}

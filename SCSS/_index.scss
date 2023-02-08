@@ -1,0 +1,109 @@
+/* Index */
+
+#bodyi {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "quienes-somos"
+    "Servicios"
+    "coming-soon"
+    "footer";
+    grid-template-columns: 1fr;
+}
+
+#quienes-somos {
+    grid-area: quienes-somos;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.video{
+    background-color: $color-primario;    
+    padding: 3rem;
+}
+
+.separacion{
+    padding: 2rem;
+    width: 25rem;
+    background-color: $color-aopaco;
+}
+
+@media screen and (min-width: 1200px){
+    .separacion{
+        width: 45rem;
+    }
+    .video{
+        display: flex;
+        align-items: center;
+    }
+}
+
+/*SERVICIOS*/
+
+#Servicios {
+    grid-area: Servicios;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @include flex-colum-centrado;
+    justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+    #Servicios {
+        flex-direction: row;
+    }
+}
+
+.card{
+    background-color: $color-primario;    
+    padding: 3rem;
+    width: 17.5rem;
+    height: 25rem;
+    border: solid 1rem #00748d;
+    transition: all 1s;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.2);
+}
+
+.card__titulo {
+    font-size: 1.6rem;
+}
+.card__imagen{
+    width: 18rem;
+    height: 12rem;
+}
+
+.card__descripcion{
+    text-align: justify;
+}
+
+/*comingsoon*/
+
+#coming-soon{
+    grid-area: coming-soon;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.homedesign{
+    padding: 2rem;
+    width: 25rem;
+    background-color: $color-aopaco;
+    text-align: justify;
+}
+@media screen and (min-width: 1200px) {
+    .homedesign {
+        width: 45rem;
+    }
+}
+

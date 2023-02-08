@@ -1,0 +1,110 @@
+/*demolicion*/
+
+#bodyd {
+    background-image: url(../img/fondo.jfif);
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "d1"
+    "d2"
+    "d3"
+    "footer";
+}
+
+#d1{
+    margin-top: 2rem;
+    grid-area: d1;
+    padding: 4rem;
+    background-color: $color-aopaco;
+    display: flex;
+    flex-wrap: wrap;
+    div {
+    text-align: center;
+    }
+}
+
+#d2 {
+    grid-area: d2;
+    background-color: $color-primario;
+    
+    h2 {
+    margin-top: 2rem;
+    text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #d2 {
+        grid-area: d2;
+        background-color: $color-primario;
+        
+        h2 {
+        margin-top: 2rem;
+        text-align: center;
+        }
+    }
+}
+
+
+
+.fotos {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @include flex-colum-centrado;
+
+    img{
+    height: 25rem;
+    width: 25rem;
+    }
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .fotos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        column-gap: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        transition: 2s;
+    }
+}
+
+
+#d3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    background-color: $color-aopaco;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1200px){
+    #d3 {
+        grid-area: d3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: $color-aopaco;
+    }
+
+}
+
+.escombros{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    width: 32rem;
+}
+
+.videod {
+    display: grid;
+    background-color: $color-aopaco;    
+    padding: 3rem;
+}
